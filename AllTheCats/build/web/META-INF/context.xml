@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/AllTheCats">
+    <Resource name="jdbc/allTheCats" auth="Container" 
+              driverClassName="com.mysql.jdbc.Driver" 
+              url="jdbc:mysql://sql9.freemysqlhosting.net:3306/sql9206949" 
+              username="sql9206949" password="gSh8laYMnW" 
+              maxActive="100" maxIdle="30" maxWait="10000" 
+              logAbandoned="true" removeAbandoned="true" 
+              removeAbandonedTimeout="60" type="javax.sql.DataSource"/>
+</Context>
