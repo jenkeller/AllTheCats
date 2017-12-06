@@ -33,24 +33,27 @@
             <p>Enter your login credentials.</p>
             <label id="myLabel">Username:</label>
             <% if (userinfo.getName() != null) {%>
-            <input id="myTextFields" type="text" name="name" value="<%=userinfo.getEmail()%>" required>
+            <input id="myTextFields" type="email" name="name" value="<%=userinfo.getEmail()%>" required>
             <% } else { %>
-            <input id="myTextFields" type="text" name="name" required>
+            <input id="myTextFields" type="email" name="name" required>
             <% }%>
             <br> <br>
             <label id="myLabel">Password:</label>
             <% if (userinfo.getPassword() != null) {%>
-            <input id="myTextFields" type="password" name="name" value="<%=userinfo.getPassword()%>" required>
+            <input id="myTextFields" type="password" name="password" value="<%=userinfo.getPassword()%>" required>
             <% } else { %>
-            <input id="myTextFields" type="password" name="name" required>
+            <input id="myTextFields" type="password" name="password" required>
             <% }%>
             <br> <br>
             <input type="submit" name="submit" id="myButton" value="Login">
         </form>
         <br> <br>
+        <% if (userinfo.getErrorText() != null && !userinfo.getErrorText().isEmpty()) {%>
+        <p id="errorP"><%=userinfo.getErrorText()%></p>
+        <% }%>
         <hr>
         <p>If you are a new user, please create a new account.</p>
-        <form action="createAccount" method=POST>
+        <form action="createaccount" method=POST>
             <input type="submit" name="submit" id="myButton" value="Create New Account">
         </form>
     </center>

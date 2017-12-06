@@ -28,7 +28,7 @@
                 <% }%>
         </ul>
         <h1>~<i>AllTheCats</i> Adoption Website~</h1>
-    <center><img src="contactCat.jpg" alt="Contact Cat" style="width:500px;height:400px;"></center>
+    <center><img src="images/contactCat.jpg" alt="Contact Cat" style="width:500px;height:400px;"></center>
     <br>
     <h2><u>Contact Us</u></h2>
     <p>

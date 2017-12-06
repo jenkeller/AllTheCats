@@ -12,6 +12,8 @@ public class UserInfo {
     BillingAddress address;
     PhoneNumber phone;
     CreditCardInfo card;
+    String errorText;
+    boolean cash;
 
     public UserInfo() {
         name = "";
@@ -20,6 +22,8 @@ public class UserInfo {
         address = new BillingAddress();
         phone = new PhoneNumber();
         card = new CreditCardInfo();
+        errorText = "";
+        cash = false;
     }
 
     public String getName() {
@@ -68,5 +72,21 @@ public class UserInfo {
 
     public void setCard(CreditCardInfo card) {
         this.card = card;
+    }
+
+    public String getErrorText() {
+        return errorText;
+    }
+
+    public void setErrorText(String errorText) {
+        this.errorText = errorText;
+    }
+
+    public boolean isCash() {
+        return cash;
+    }
+
+    public void setCash(boolean cash) {
+        this.cash = cash;
     }
 }
